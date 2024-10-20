@@ -8,6 +8,7 @@ import Link from 'next/link';
 // import Logo from '../logo/Logo';
 import Button from '@/components/ui/button';
 import { defaultNavMenuData } from '@/components/data/public-data';
+import Logo from '../logo/Logo';
 
 // Hamburger menu
 const DefaultHamburgerMenu: React.FC = () => {
@@ -55,10 +56,7 @@ const DefaultNavbar: React.FC = () => {
         <div className="w-full bg-gray-300 fixed top-0 left-0 z-30">
             <nav className="flex relative justify-between oc-commonContainer items-center pt-4 pb-[10px] md:pt-6 md:pb-5">
                 <div>
-                    <Link href={'/'}>
-                        Logo
-                        {/* <Logo /> */}
-                    </Link>
+                    <Logo />
                 </div>
                 <div className="hidden lg:block absolute right-1/2 top-2/2 transform translate-x-1/2">
                     <div className="flex justify-center">
