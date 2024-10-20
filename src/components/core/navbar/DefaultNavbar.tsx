@@ -9,6 +9,7 @@ import Link from 'next/link';
 import Button from '@/components/ui/button';
 import { defaultNavMenuData } from '@/components/data/public-data';
 import Logo from '../logo/Logo';
+import MenuIcon from '../icons/publicIcon/MenuIcon';
 
 // Hamburger menu
 const DefaultHamburgerMenu: React.FC = () => {
@@ -18,8 +19,8 @@ const DefaultHamburgerMenu: React.FC = () => {
         <aside>
             <Sheet open={open} onOpenChange={() => setOpen(!open)}>
                 <SheetTrigger>
-                    Menu
-                    {/* <MenuIcon size={'32'} /> */}
+                    {/* Menu */}
+                    <MenuIcon size={'32'} />
                 </SheetTrigger>
                 <SheetContent>
                     <DefaultNavMenuList />
@@ -38,7 +39,7 @@ export const DefaultNavMenuList: React.FC = () => {
             {defaultNavMenuData.map((i) => (
                 <div key={Math.random()}>
                     <Link
-                        className={` text-w-title-1-Medium-22 ${pathname === i.url ? '' : ''
+                        className={` text-w-title-1-Medium-22 ${pathname === i.url ? 'text-primary-color underline' : ''
                             }`}
                         href={i.url}
                     >
@@ -53,8 +54,9 @@ export const DefaultNavMenuList: React.FC = () => {
 // Default Navbar
 const DefaultNavbar: React.FC = () => {
     return (
-        <div className="w-full bg-gray-300 fixed top-0 left-0 z-30">
-            <nav className="flex relative justify-between oc-commonContainer items-center pt-4 pb-[10px] md:pt-6 md:pb-5">
+        // 
+        <div className="w-full fixed bg-white border-b  top-0 left-0 z-30 ">
+            <nav className="flex relative justify-between oc-commonContainer  items-center pt-4 pb-[10px] md:pt-6 md:pb-5">
                 <div>
                     <Logo />
                 </div>
@@ -66,7 +68,7 @@ const DefaultNavbar: React.FC = () => {
                 <div className="flex items-center gap-2 md:gap-[10px] cursor-pointer xl:gap-5 justify-end">
                     <div>
                         <Link href={'/quote'}>
-                            <Button label={'Get a Quote'} />
+                            <Button variant={'primarybtn'} label={'Contact Us'} />
                         </Link>
                     </div>
                     <div className="block lg:hidden pl-2">

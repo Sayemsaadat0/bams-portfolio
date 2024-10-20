@@ -10,35 +10,34 @@
 
 
 
-
 /* Container */
 .oc-commonContainer {
   max-width: 1512px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 112px;
+  padding-right: 112px;
 }
 
 
 @media screen and (max-width: 1280px) {
   .oc-commonContainer {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .oc-commonContainer {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .oc-commonContainer {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -46,8 +45,8 @@
 
 @media screen and (max-width: 340px) {
   .oc-commonContainer {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 

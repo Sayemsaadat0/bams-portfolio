@@ -10,7 +10,7 @@ const template = ({ children }: { children: React.ReactNode }) => {
             <div>
                 <DefaultNavbar />
             </div>
-            <div className='mt-24 md:mt-32'>
+            <div className='mt-24 md:mt-32 '>
                 {children}
             </div>
             <div className=''>

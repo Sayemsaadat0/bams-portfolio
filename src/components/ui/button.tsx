@@ -10,9 +10,13 @@ export const buttonVariants = cva(
     variants: {
       variant: {
         primarybtn:
-          'rounded-[10px] text-black bg-yellow-500 py-2.5 px-3 md:px-[32px] md:py-[18px] hover:bg-bg-yellow-700 hover:border-none transition-all',
-        outlineBtn:
-          'rounded-[10px] bg-none text-yellow-800 border border-oc-primary-1-500 py-2.5 px-3 md:px-[30px] md:px-[32px] md:py-[18px] hover:bg-yellow-100 hover:border-white transition-all',
+          'rounded-[10px] text-black bg-primary-color py-2.5 px-3 md:px-[32px] md:py-[18px] hover:bg-primary-color/50 hover:border-none transition-all',
+          primaryoutlineBtn:
+          'rounded-[10px] bg-none text-primary-color border border-primary-color py-2.5 px-3 md:px-[30px] md:px-[32px] md:py-[18px] hover:bg-primary-color/30 hover:border-white transition-all',
+        secondarybtn:
+          'rounded-[10px] text-black bg-secondary-color py-2.5 px-3 md:px-[32px] md:py-[18px] hover:bg-secondary-color/70 hover:border-none transition-all',
+          secondaryoutlineBtn:
+          'rounded-[10px] bg-none text-black border border-secondary-color py-2.5 px-3 md:px-[30px] md:px-[32px] md:py-[18px] hover:bg-secondary-color/30 hover:border-white transition-all',
         textBtn:
           'rounded-[10px] bg-none text-black py-2.5 px-3 md:px-[30px] md:px-[32px] md:py-[18px]',
         paginationBtn:

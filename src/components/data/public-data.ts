@@ -1,10 +1,10 @@
 export const defaultNavMenuData = [
     {
-        title: 'Home Layout',
+        title: 'Home',
         url: '/',
     },
     {
-        title: 'Admin Layout',
-        url: '/admin',
+        title: 'Pricing',
+        url: '/pricing',
     },
 ];
