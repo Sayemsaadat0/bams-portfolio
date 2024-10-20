@@ -7,7 +7,7 @@ Starter pack for next js with typescript project along with tanstack query , axi
 Use the package manager  to install This.
 
 ```bash
-Git clone <this is repo url>
+git clone https://github.com/Sayemsaadat0/next-ts-starter.git
 ```
 
 
